@@ -1,4 +1,46 @@
 <resources>
+    <string name="app_name">Calories</string>
+
+    //signup
+    <string name="full_name">Full Name</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="enter_your_e_mail">Enter your e-mail</string>
+    <string name="user_name">User name</string>
+    <string name="Enter_your_username">Enter your username</string>
+    <string name="Password">Password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="weight_kg">Weight(kg)</string>
+    <string name="enter_your_weight">Enter your weight</string>
+    <string name="height_cm">Height(cm)</string>
+    <string name="enter_your_height">Enter your height</string>
+
+    //login
+    <string name="username">Username</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your password</string>
+
+    //home
+    <string name="calories">Calories</string>
+    <string name="xxxxxx">XXXXXX</string>
+    <string name="gained1">You have gained</string>
+    <string name="gained2">for today</string>
+    <string name="bmiHome">Your BMI : XXX</string>
+    <string name="caloriesExpect">Expecting Calories : XXX</string>
+
+
+    //statistic
+    <string name="stats">Calorie Chart</string>
+    <string name="statBMI">Calculate your BMI now!</string>
+    <string name="enter_height">Enter Height</string>
+    <string name="enter_weight">Enter Weight</string>
+    <string name="new_bmi">Your new BMI is XXX</string>
+    <string name="congratulations">CONGRATULATIONS</string>
+    <string name="healthy">You are now healthy!</string>
+    <string name="new_weight">New Weight : XXX</string>
+    <string name="new_height">New Height : XXX</string>
+    
     <string name="app_name">MAD-Y2S2</string>
     <string name="title_activity_forgot_passsowrd">MainActivity</string>
     <!-- Strings used for fragments for navigation -->
