@@ -85,4 +85,61 @@
     <string name="forgot_password">Forgot Password</string>
     <string name="forgot_your_password_don_t_worry_give_us_your_emial_and_we_will_send_it_to_you_asap">Forgot your password? Don\'t worry! Give us your emial and we will send it to you ASAP!</string>
     <string name="email2">Email:</string>
+    
+    //add meal
+    <string name="add_100cal_g_1">add 100cal g-1</string>
+    <string name="add_gram">" !add gram"</string>
+    <string name="_050">050</string>
+    <string name="_240">240</string>
+    <string name="_025">025</string>
+    <string name="_350">350</string>
+    <string name="_125">125</string>
+    <string name="food_7">food 7</string>
+    <string name="food_6">food 6</string>
+    <string name="food_5">food 5</string>
+    <string name="food_4">food 4</string>
+    <string name="_550">550</string>
+    <string name="_250">250</string>
+    <string name="_300">300</string>
+    <string name="save">SAVE</string>
+    <string name="_100">100</string>
+    <string name="_045">045</string>
+    <string name="_165">165</string>
+    <string name="_100cal_g_1">100 cal g-1</string>
+    <string name="add_food_">+Add food</string>
+    <string name="food_3">food 3</string>
+    <string name="food_2">food 2</string>
+    <string name="food_1">food 1</string>
+    <string name="gram_">GRAM</string>
+    <string name="meals">MEALS</string>
+    <string name="add_meal">+ADD MEAL</string>
+    <string name="yyy" />
+    <string name="food_7_">food 7</string>
+    
+    //your meal
+    <string name="your_meal">YOUR MEAL</string>
+    <string name="meal_">MEAL</string>
+    <string name="gram___">GRAM</string>
+    <string name="_100_cal_g_1___">100 CAL G-1</string>
+    <string name="food_1_">food 1</string>
+    <string name="food_2_">food 2</string>
+    <string name="food_5_">food 5</string>
+    <string name="food_6_">food 6</string>
+    <string name="_300_">300</string>
+    <string name="_250_">250</string>
+    <string name="_550_">550</string>
+    <string name="_125_">125</string>
+    <string name="_350_">350</string>
+    <string name="_025_">025</string>
+    <string name="_100_">100</string>
+    <string name="_165_">165</string>
+    <string name="_045_">045</string>
+    <string name="_450_">450</string>
+    <string name="_240_">240</string>
+    <string name="_050_">050</string>
+    <string name="_084_">084</string>
+    <string name="food_7___">food 7</string>
+    <string name="_100_____">100</string>
+    <string name="total_calories____">TOTAL CALORIES</string>
+    <string name="your_meal_is_saved">Your meal is saved</string>
 </resources>
