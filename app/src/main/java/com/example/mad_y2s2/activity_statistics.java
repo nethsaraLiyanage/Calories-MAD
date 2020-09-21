@@ -26,7 +26,9 @@ public class activity_statistics extends AppCompatActivity {
                 new DataPoint(3, 2),
                 new DataPoint(4, 6),
                 new DataPoint(5, 6),
-                new DataPoint(6, 6)
+                new DataPoint(6, 6),
+                new DataPoint(7, 3),
+                new DataPoint(8, 2)
         });
         graph.addSeries(series);
 
