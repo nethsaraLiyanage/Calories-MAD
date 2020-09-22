@@ -146,4 +146,9 @@
     <string name="exercises">Exercises</string>
 
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment 1</string>
+    <string name="hello_blank_fragment2">Hello blank fragment 2</string>
+
+
 </resources>
