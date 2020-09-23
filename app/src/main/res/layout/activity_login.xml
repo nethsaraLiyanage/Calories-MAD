@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.334" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/fd5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/username"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.449" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/fd6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/username"
@@ -104,7 +104,7 @@
         app:layout_constraintVertical_bias="0.641" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_tot_cal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/google"

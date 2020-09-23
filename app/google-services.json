@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "384287500117",
+    "firebase_url": "https://calories-fbb9c.firebaseio.com",
+    "project_id": "calories-fbb9c",
+    "storage_bucket": "calories-fbb9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384287500117:android:952a8b888eb38a1cbb31dc",
+        "android_client_info": {
+          "package_name": "com.example.mad_y2s2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384287500117-g9sku99d2jejrf1nao7mdajtsfd0ber1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mad_y2s2",
+            "certificate_hash": "826a48653ec7c4c65e4371266943b8cfce43ee55"
+          }
+        },
+        {
+          "client_id": "384287500117-k897hojcokbfeftp9k89ftm219u8jecs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX_qGgTnWWYaXT70eNxUcqzFnZkoi-7pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384287500117-k897hojcokbfeftp9k89ftm219u8jecs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

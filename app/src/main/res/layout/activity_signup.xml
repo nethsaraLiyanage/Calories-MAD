@@ -47,7 +47,7 @@
        app:layout_constraintVertical_bias="0.196" />
 
    <EditText
-       android:id="@+id/editTextTextPersonName2"
+       android:id="@+id/fd5"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:background="@drawable/username"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.309" />
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/fd6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/username"
@@ -105,7 +105,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.414" />
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/fd4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/username"
@@ -136,7 +136,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/fd7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/username"
