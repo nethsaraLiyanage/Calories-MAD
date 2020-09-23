@@ -144,6 +144,39 @@
     <string name="secondary_text">sec</string>
     <string name="supporting_text">sup</string>
     <string name="exercises">Exercises</string>
+    <string name="total_food">Total Foods:</string>
+    <string name="xxxxx">XXXXX</string>
+    <string name="calorie">Total Calories</string>
+    <string name="tot_cal">TOTAL CALARIES</string>
+    <string name="tot_cala">TODAY CALORIES</string>
+    <string name="you_have_entered_food_count_is">You have entered food count: is</string>
+    <string name="you_have_entered_food_count_is_">You have entered food count is:</string>
+    <string name="tot_calarie"><![CDATA[TODAY\'s CALORIES & FOOD COUNT]]></string>
+    <string name="tot_calaries">"Today's Calories and Food count "</string>
+    <string name="food2">food 2</string>
+    <string name="food3">food 3</string>
+    <string name="food_1__" />
+    <string name="food_3__" />
+    <string name="food_2__" />
+    <string name="food_4_" />
+    <string name="food_5__" />
+    <string name="food_6__" />
+    <string name="food_7__" />
+    <string name="__1" />
+    <string name="___2__" />
+    <string name="__3" />
+    <string name="__4" />
+    <string name="_51_" />
+    <string name="__6" />
+    <string name="__7" />
+    <string name="__8" />
+    <string name="__9" />
+    <string name="__010" />
+    <string name="__011" />
+    <string name="__012" />
+    <string name="__013" />
+    <string name="__014" />
+    <string name="food_count">5</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

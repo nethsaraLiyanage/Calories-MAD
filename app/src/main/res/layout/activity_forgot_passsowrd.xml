@@ -35,7 +35,7 @@
             app:layout_constraintVertical_bias="0.585" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btn_tot_cal"
             android:layout_width="143dp"
             android:layout_height="37dp"
             android:background="#5E7BC5"
