@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "1087779563269",
-    "firebase_url": "https://mad-y2s2.firebaseio.com",
+    "project_number": "384287500117",
+    "firebase_url": "https://calories-fbb9c.firebaseio.com",
     "project_id": "calories-fbb9c",
-    "storage_bucket": "mad-y2s2.appspot.com"
+    "storage_bucket": "calories-fbb9c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1087779563269:android:bee020d7fca05e8bedf96c",
+        "mobilesdk_app_id": "1:384287500117:android:952a8b888eb38a1cbb31dc",
         "android_client_info": {
-          "package_name": "calories"
+          "package_name": "com.example.mad_y2s2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1087779563269-erh48nda7ssvk45mj7vt4n7drpsrge9i.apps.googleusercontent.com",
+          "client_id": "384287500117-g9sku99d2jejrf1nao7mdajtsfd0ber1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.mad_y2s2",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "1087779563269-mi1lf38h6c8fg976g6qkb1cgo12kl6q9.apps.googleusercontent.com",
+          "client_id": "384287500117-k897hojcokbfeftp9k89ftm219u8jecs.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBTYTWeRXXjh7bMzphxPvN9bJMcWdlaXv8"
+          "current_key": "AIzaSyBX_qGgTnWWYaXT70eNxUcqzFnZkoi-7pY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1087779563269-mi1lf38h6c8fg976g6qkb1cgo12kl6q9.apps.googleusercontent.com",
+              "client_id": "384287500117-k897hojcokbfeftp9k89ftm219u8jecs.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
