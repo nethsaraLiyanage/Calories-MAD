@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "1087779563269",
     "firebase_url": "https://mad-y2s2.firebaseio.com",
-    "project_id": "mad-y2s2",
+    "project_id": "calories-fbb9c",
     "storage_bucket": "mad-y2s2.appspot.com"
   },
   "client": [
@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1087779563269:android:bee020d7fca05e8bedf96c",
         "android_client_info": {
-          "package_name": "com.example.mad_y2s2"
+          "package_name": "calories"
         }
       },
       "oauth_client": [
