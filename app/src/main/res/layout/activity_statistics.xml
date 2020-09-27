@@ -175,7 +175,7 @@
         android:layout_gravity="bottom"
         app:layout_anchorGravity="bottom|center"
         app:menu="@menu/bottom_app_bar"
-        app:navigationIcon="@drawable/homenv" />
+        app:navigationIcon="@drawable/ic_baseline_home_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
