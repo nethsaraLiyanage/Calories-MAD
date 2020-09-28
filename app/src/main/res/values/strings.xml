@@ -182,6 +182,47 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment 1</string>
     <string name="hello_blank_fragment2">Hello blank fragment 2</string>
+    <string name="addmealp">Add Your Meal</string>
+    <string name="add_mealp">"Add Your Meal "</string>
+    <string name="add_meal_type" />
+    <string name="add_mealtype">Enter Your Meal Type(ex:dinner)</string>
+    <string name="food_name" />
+    <string name="foodname">Enter Food Name(ex:rice)</string>
+    <string name="food_name_">Enter Food Name(ex:rice)</string>
+    <string name="addgram">Enter Gram(ex100)</string>
+    <string name="addcalorie">Enter Calories(ex:25)</string>
+    <string name="saveFood">Save</string>
+    <string name="add">ADD FOOD</string>
+    <string name="totalCal">Total calories</string>
+    <string name="typeM">MEAL TYPE</string>
+    <string name="nameF">FOOD NAME</string>
+    <string name="gramF">GRAM</string>
+    <string name="catogorieF">CATOGARIES</string>
+    <string name="date">Enter Date</string>
+    <string name="Date">DATE</string>
+    <string name="addMeal">"Add "</string>
+    <string name="tot">Total calories</string>
+    <string name="date_">Enter Date(ex:mm/dd/yy)</string>
+    <string name="date_of_meals">DATE</string>
+    <string name="totCalName">TOTAL CALORIE</string>
+    <string name="date_foods">Enter Date(ex:mm/dd/yy)</string>
+    <string name="date_for_total_cal">Enter Date(ex:mm/dd/yy)</string>
+    <string name="UpdateFood">UPDATE</string>
+    <string name="uid">Enter Your ID(ex:u0001)</string>
+    <string name="cabo">Enter Cabohydrate (ex:100)</string>
+    <string name="protne">Enter protinte count(ex:10)</string>
+    <string name="caboh">Enter Cobohydrate Count(ex:100)</string>
+    <string name="fat">Enter Fat Count(Ex:200)</string>
+    <string name="user_id">Enter User ID:(c0001)</string>
+    <string name="cabohydrate">Enter Count of Carbohydrate(ex:100)</string>
+    <string name="protine__">Enter Count of Protine(ex:200)</string>
+    <string name="fat_">Enter Count of Fat(ex:70)</string>
+    <string name="ID">ID</string>
+    <string name="cabohydrate__">Cabohydrate</string>
+    <string name="cabohydrte__">CARBOHYDRATE</string>
+    <string name="pro_">PROTINE</string>
+    <string name="fit">FAT</string>
+    <string name="calories_">CALORIES</string>
 
 
 </resources>
