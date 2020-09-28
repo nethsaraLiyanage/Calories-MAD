@@ -2,10 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/search"
+        android:id="@+id/profile1"
         android:contentDescription="@string/content_description_search"
+        android:icon="@drawable/ic_baseline_person_24"
         app:showAsAction="ifRoom"
-        android:title="PROFILE"/>
+        android:title="TODO" />
 
     <item
         android:id="@+id/more"
@@ -28,14 +29,26 @@
         app:showAsAction="never"
         />
     <item
+        android:id="@+id/more6"
+        android:title="@string/more6"
+        android:contentDescription="@string/content_description_more"
+        app:showAsAction="never"
+        />
+    <item
         android:id="@+id/more4"
-        android:title="@string/more3"
+        android:title="@string/more4"
         android:contentDescription="@string/content_description_more"
         app:showAsAction="never"
         />
     <item
         android:id="@+id/more5"
         android:title="@string/more5"
+        android:contentDescription="@string/content_description_more"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/more7"
+        android:title="@string/more7"
         android:contentDescription="@string/content_description_more"
         app:showAsAction="never"
         />
