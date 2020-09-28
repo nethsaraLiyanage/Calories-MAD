@@ -65,13 +65,13 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="20dp"
                         android:maxHeight="100dp"
-                        android:src="@drawable/calories"
+                        android:src="@drawable/pushup"
                         android:textAlignment="center" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Exercise 01"
+                        android:text="Push-Ups"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
@@ -106,13 +106,13 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="20dp"
                         android:maxHeight="100dp"
-                        android:src="@drawable/calories"
+                        android:src="@drawable/running"
                         android:textAlignment="center" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Exercise 02"
+                        android:text="Running"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
@@ -147,13 +147,13 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="20dp"
                         android:maxHeight="100dp"
-                        android:src="@drawable/calories"
+                        android:src="@drawable/cycling"
                         android:textAlignment="center" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Exercise 03"
+                        android:text="Cycling"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
@@ -188,13 +188,13 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="20dp"
                         android:maxHeight="100dp"
-                        android:src="@drawable/calories"
+                        android:src="@drawable/skipping"
                         android:textAlignment="center" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Exercise 04"
+                        android:text="Skipping"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
@@ -229,13 +229,13 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="20dp"
                         android:maxHeight="100dp"
-                        android:src="@drawable/calories"
+                        android:src="@drawable/football"
                         android:textAlignment="center" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Exercise 05"
+                        android:text="Outdoor Sports"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
@@ -270,13 +270,13 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="20dp"
                         android:maxHeight="100dp"
-                        android:src="@drawable/calories"
+                        android:src="@drawable/situp"
                         android:textAlignment="center" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Exercise 06"
+                        android:text="Sit-Ups"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
