@@ -24,15 +24,11 @@ public class MonthlyChart extends Fragment {
 
         //from series
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
-                new DataPoint(0, 1),
+                new DataPoint(0, 0),
                 new DataPoint(1, 5),
                 new DataPoint(2, 3),
                 new DataPoint(3, 2),
-                new DataPoint(4, 6),
-                new DataPoint(5, 6),
-                new DataPoint(6, 6),
-                new DataPoint(7, 3),
-                new DataPoint(8, 2)
+                new DataPoint(4, 6)
         });
         graph.addSeries(series);
         return view;

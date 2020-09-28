@@ -24,18 +24,16 @@ public class WeeklyChart extends Fragment {
         //get graph from the layout
         GraphView graph = (GraphView) view.findViewById(R.id.graph);
 
-
         //from series
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
-                new DataPoint(0, 1),
+                new DataPoint(0, 0),
                 new DataPoint(1, 5),
                 new DataPoint(2, 3),
                 new DataPoint(3, 2),
                 new DataPoint(4, 5),
                 new DataPoint(5, 5),
                 new DataPoint(6, 5),
-                new DataPoint(7, 3),
-                new DataPoint(8, 2)
+                new DataPoint(7, 3)
         });
         graph.addSeries(series);
         return view;

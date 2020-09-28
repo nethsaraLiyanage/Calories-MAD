@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mad_y2s2.activity_statistics">
     <item
         android:id="@+id/profile1"
         android:contentDescription="@string/content_description_search"
@@ -16,13 +18,6 @@
         />
 
     <item
-        android:id="@+id/more2"
-        android:title="@string/more2"
-        android:contentDescription="@string/content_description_more"
-        app:showAsAction="never"
-        />
-
-    <item
         android:id="@+id/more3"
         android:title="@string/more3"
         android:contentDescription="@string/content_description_more"
@@ -31,6 +26,13 @@
     <item
         android:id="@+id/more6"
         android:title="@string/more6"
+        android:contentDescription="@string/content_description_more"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/more2"
+        android:title="@string/more2"
         android:contentDescription="@string/content_description_more"
         app:showAsAction="never"
         />

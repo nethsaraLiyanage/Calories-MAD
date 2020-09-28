@@ -5,13 +5,17 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.jjoe64.graphview.GraphView;
-import com.jjoe64.graphview.series.DataPoint;
-import com.jjoe64.graphview.series.LineGraphSeries;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.widget.Toolbar;
+
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class activity_statistics extends AppCompatActivity {
 
@@ -41,6 +45,29 @@ public class activity_statistics extends AppCompatActivity {
         });
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.bottom_app_bar, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.more) {
+            Intent ProfileIntent = new Intent(this, MainActivity.class);
+            startActivity(ProfileIntent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     public void changeFragment(View view){
         Fragment fragment1;
@@ -54,7 +81,7 @@ public class activity_statistics extends AppCompatActivity {
             ft.commit();
         }
 
-        if (view == findViewById(R.id.fragButton3)){
+        if(view == findViewById(R.id.fragButton3)){
             fragment2 = new WeeklyChart();
             FragmentManager fm2 = getSupportFragmentManager();
             FragmentTransaction ft2 = fm2.beginTransaction();
