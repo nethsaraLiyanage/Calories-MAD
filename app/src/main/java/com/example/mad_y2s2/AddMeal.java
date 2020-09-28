@@ -75,7 +75,7 @@ Food food;
                 int calorie6=Integer.parseInt(cal6.getText().toString().trim());
                 int calorie7=Integer.parseInt(cal7.getText().toString().trim());
 
-                //food.setFd1(food1.getText().toString().trim());
+                food.setFd1(food1.getText().toString().trim());
                 food.setFd2(food2.getText().toString().trim());
                 food.setFd3(food3.getText().toString().trim());
                 food.setFd4(food4.getText().toString().trim());
