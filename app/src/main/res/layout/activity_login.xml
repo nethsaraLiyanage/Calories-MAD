@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.334" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/fname"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:background="@drawable/username"
@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="0.449" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/email"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:background="@drawable/username"
@@ -96,7 +96,7 @@
         app:layout_constraintVertical_bias="0.505" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signup_button"
         android:layout_width="320dp"
         android:layout_height="54dp"
         android:backgroundTint="@android:color/holo_blue_dark"
