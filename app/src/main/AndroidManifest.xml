@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-      
-        <activity android:name=".exercise"></activity>
-        <activity android:name=".activity_calorieStatus"></activity>
-        <activity android:name=".MainActivity" ></activity>
-        <activity android:name=".activity_home"></activity>
-        <activity android:name=".activity_login" ></activity>
-        <activity android:name=".SignupActivity" ></activity>
+        <activity android:name=".AddWater"></activity>
+        <activity android:name=".exercise" />
+        <activity android:name=".activity_calorieStatus" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity_home" />
+        <activity android:name=".activity_login" />
+        <activity android:name=".SignupActivity" />
         <activity android:name=".activity_statistics">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_total_food_calories_count"></activity>
-        <activity android:name=".AddMeal"></activity>
-        <activity android:name=".Update_meal"></activity>
-        <activity android:name=".UpdateActivity"></activity>
+        <activity android:name=".activity_total_food_calories_count" />
+        <activity android:name=".AddMeal" />
+        <activity android:name=".Update_meal" />
+        <activity android:name=".UpdateActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
