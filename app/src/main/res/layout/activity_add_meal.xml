@@ -197,7 +197,7 @@
             app:layout_constraintVertical_bias="0.296" />
 
         <EditText
-            android:id="@+id/fd4"
+            android:id="@+id/pName"
             android:layout_width="69dp"
             android:layout_height="37dp"
             android:layout_marginStart="28dp"
@@ -232,7 +232,7 @@
             app:layout_constraintVertical_bias="0.532" />
 
         <EditText
-            android:id="@+id/fd6"
+            android:id="@+id/pUnamw"
             android:layout_width="69dp"
             android:layout_height="36dp"
             android:ems="10"
@@ -249,7 +249,7 @@
             app:layout_constraintVertical_bias="0.608" />
 
         <EditText
-            android:id="@+id/fd7"
+            android:id="@+id/pEmail"
             android:layout_width="69dp"
             android:layout_height="38dp"
             android:ems="10"
