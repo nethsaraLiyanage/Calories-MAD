@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <ImageView
             android:id="@+id/imageView8"
             android:layout_width="456dp"
@@ -21,9 +22,8 @@
             app:layout_constraintHorizontal_bias="0.511"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="0.002"
             app:srcCompat="@drawable/head" />
-
 
         <ImageView
             android:id="@+id/homecir"
@@ -51,10 +51,10 @@
 
         <TextView
             android:id="@+id/textView40"
-            android:layout_width="237dp"
-            android:layout_height="72dp"
+            android:layout_width="198dp"
+            android:layout_height="37dp"
             android:fontFamily="sans-serif"
-            android:text="@string/tot_calaries"
+            android:text="@string/totCalName"
             android:textColor="#FCF1EDED"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -64,51 +64,44 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.111" />
 
-        <TextView
-            android:id="@+id/textView58"
-            android:layout_width="96dp"
-            android:layout_height="74dp"
-            android:background="#00D1B3B3"
-            android:fontFamily="sans-serif"
-            android:text="@string/you_have_entered_food_count_is_"
-            android:textColor="#121212"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.274"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.346" />
 
         <EditText
-            android:id="@+id/editTextNumber10"
-            android:layout_width="87dp"
-            android:layout_height="72dp"
+            android:id="@+id/date_Meals"
+            android:layout_width="218dp"
+            android:layout_height="42dp"
             android:ems="10"
-            android:hint="@string/food_count"
-            android:inputType="number"
-            android:textSize="24sp"
+            android:hint="@string/date_for_total_cal"
+            android:inputType="date"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.634"
+            app:layout_constraintHorizontal_bias="0.554"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.354" />
+            app:layout_constraintVertical_bias="0.259" />
 
-        <EditText
-            android:id="@+id/editTextNumberDecimal3"
-            android:layout_width="164dp"
-            android:layout_height="71dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:textSize="24sp"
+        <TextView
+            android:id="@+id/calorie_tot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.599" />
+            app:layout_constraintVertical_bias="0.594" />
+
+        <Button
+            android:id="@+id/search_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECK DATE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.779"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.348" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
