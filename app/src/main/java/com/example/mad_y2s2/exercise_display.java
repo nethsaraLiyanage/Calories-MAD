@@ -5,8 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,6 +26,9 @@ public class exercise_display extends AppCompatActivity {
     TextView eName, eTime, eStep, bCal, desc;
     DatabaseReference dref;
 
+    private BottomAppBar bottomAppBar;
+    private FloatingActionButton floatBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +36,19 @@ public class exercise_display extends AppCompatActivity {
 
         Intent intent = getIntent();
         String exID = intent.getStringExtra("cardId");
+
+        bottomAppBar = findViewById(R.id.bottomAppBar);
+        setSupportActionBar(bottomAppBar);
+
+        floatBtn = findViewById(R.id.addMeal);
+        floatBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(exercise_display.this,Add_Meal_2.class);
+                startActivity(intent);
+
+            }
+        });
 
 
         eName = (TextView)findViewById(R.id.exerciseName);
@@ -58,5 +80,44 @@ public class exercise_display extends AppCompatActivity {
 
             }
         });
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.bottom_app_bar, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.more:
+            case R.id.more6:
+                Intent intent = new Intent(exercise_display.this,activity_home.class);
+                startActivity(intent);
+                return true;
+            case R.id.profile1:
+            case R.id.more5:
+                Intent intentprof = new Intent(exercise_display.this,MainActivity.class);
+                startActivity(intentprof);
+                return true;
+            case R.id.more2:
+                Intent intent2 = new Intent(exercise_display.this,activity_statistics.class);
+                startActivity(intent2);
+                return true;
+            case R.id.more3:
+                Intent intent3 = new Intent(exercise_display.this,Add_Meal_2.class);
+                startActivity(intent3);
+                return true;
+            case R.id.more4:
+                Intent intent4 = new Intent(exercise_display.this,exercise.class);
+                startActivity(intent4);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

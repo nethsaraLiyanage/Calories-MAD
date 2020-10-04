@@ -44,6 +44,7 @@ public class activity_statistics extends AppCompatActivity {
     private Button fragButton2;
     private Button fragButton3;
     private BottomAppBar bottomAppBar;
+    private FloatingActionButton floatBtn;
     private ArrayList<Meal> mealList = new ArrayList<>();
     private ArrayList<Meal> selmealList = new ArrayList<>();
     private DatabaseReference databaseRef;
@@ -68,12 +69,17 @@ public class activity_statistics extends AppCompatActivity {
 
         fragButton2 = findViewById(R.id.fragButton2);
         fragButton3 = findViewById(R.id.fragButton3);
+
+
         bottomAppBar = findViewById(R.id.bottomAppBar);
         setSupportActionBar(bottomAppBar);
 
-        bottomAppBar.setNavigationOnClickListener(new View.OnClickListener() {
+        floatBtn = findViewById(R.id.addMeal);
+        floatBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(activity_statistics.this,Add_Meal_2.class);
+                startActivity(intent);
 
             }
         });
@@ -151,7 +157,6 @@ public class activity_statistics extends AppCompatActivity {
         });
 
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
@@ -170,6 +175,7 @@ public class activity_statistics extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             case R.id.profile1:
+            case R.id.more5:
                 Intent intentprof = new Intent(activity_statistics.this,MainActivity.class);
                 startActivity(intentprof);
                 return true;
