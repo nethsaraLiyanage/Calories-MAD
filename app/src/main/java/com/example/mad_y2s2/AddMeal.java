@@ -33,8 +33,8 @@ Food food;
         food3=(EditText)findViewById(R.id.fd3);
         food4=(EditText)findViewById(R.id.pName);
         food5=(EditText)findViewById(R.id.fd5);
-        food6=(EditText)findViewById(R.id.fd6);
-        food7=(EditText)findViewById(R.id.fd7);
+        food6=(EditText)findViewById(R.id.pUnamw);
+        food7=(EditText)findViewById(R.id.pEmail);
 
         grm1=(EditText)findViewById(R.id.grm_1);
         grm2=(EditText)findViewById(R.id.grm_2);

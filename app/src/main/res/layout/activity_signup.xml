@@ -177,7 +177,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.62" />
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/pAge"
         android:layout_width="320dp"
         android:layout_height="54dp"
         android:background="@drawable/username"
@@ -208,7 +208,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.726" />
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/pWeight"
         android:layout_width="320dp"
         android:layout_height="54dp"
         android:background="@drawable/username"
