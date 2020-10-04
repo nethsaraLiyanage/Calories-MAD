@@ -188,6 +188,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment 1</string>
     <string name="hello_blank_fragment2">Hello blank fragment 2</string>
+    <string name="enter_your_weight_kg">Enter Your Weight | kg</string>
+    <string name="enter_your_height_cm">Enter Your Height | cm</string>
+    <string name="bmi_calculator">BMI Calculator</string>
 
 
 </resources>
