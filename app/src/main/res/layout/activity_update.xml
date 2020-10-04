@@ -35,7 +35,7 @@
             app:srcCompat="@drawable/avatar" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName7"
+            android:id="@+id/pHeight"
             android:layout_width="197dp"
             android:layout_height="41dp"
             android:ems="10"
@@ -49,7 +49,7 @@
             app:layout_constraintVertical_bias="0.73" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/pWeight"
             android:layout_width="191dp"
             android:layout_height="45dp"
             android:ems="10"
@@ -85,6 +85,7 @@
             android:layout_width="197dp"
             android:layout_height="43dp"
             android:text="Save Updates"
+            android:textColor="#2196F3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.462"
@@ -201,7 +202,7 @@
             app:layout_constraintVertical_bias="0.68" />
 
         <EditText
-            android:id="@+id/fd4"
+            android:id="@+id/pName"
             android:layout_width="192dp"
             android:layout_height="45dp"
             android:ems="10"
@@ -215,7 +216,7 @@
             app:layout_constraintVertical_bias="0.439" />
 
         <EditText
-            android:id="@+id/fd6"
+            android:id="@+id/pUnamw"
             android:layout_width="195dp"
             android:layout_height="46dp"
             android:ems="10"
@@ -229,7 +230,7 @@
             app:layout_constraintVertical_bias="0.51" />
 
         <EditText
-            android:id="@+id/fd7"
+            android:id="@+id/pEmail"
             android:layout_width="196dp"
             android:layout_height="54dp"
             android:ems="10"
@@ -243,7 +244,7 @@
             app:layout_constraintVertical_bias="0.568" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/pAge"
             android:layout_width="193dp"
             android:layout_height="48dp"
             android:ems="10"
@@ -257,7 +258,7 @@
             app:layout_constraintVertical_bias="0.624" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/signup_button"
             android:layout_width="31dp"
             android:layout_height="30dp"
             android:layout_marginStart="127dp"

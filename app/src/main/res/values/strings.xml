@@ -195,6 +195,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment 1</string>
     <string name="hello_blank_fragment2">Hello blank fragment 2</string>
+    <string name="enter_your_weight_kg">Enter Your Weight | kg</string>
+    <string name="enter_your_height_cm">Enter Your Height | cm</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+
+
     <string name="addmealp">Add Your Meal</string>
     <string name="add_mealp">"Add Your Meal "</string>
     <string name="add_meal_type" />
@@ -236,6 +241,18 @@
     <string name="pro_">PROTINE</string>
     <string name="fit">FAT</string>
     <string name="calories_">CALORIES</string>
+
+  
+  <!-- jini update : Add water count -->
+    <string name="btnAddWater">Add Water Count</string>
+    <string name="txtDatewater" />
+    <string name="txtWaterTot" />
+    <string name="txtWaterIntake">ADD WATER INTAKE</string>
+    <string name="txtEnterwater">Enter Water Amount</string>
+    <string name="txtEnterWater">Enter Your Water Intake</string>
+    <string name="txtWaterNote">"Note: "</string>
+    <string name="noteWaterBottle">500 ml water bottle = 19.61 ounces</string>
+    <string name="ctnWaterCounted">Add</string>
 
 
 </resources>

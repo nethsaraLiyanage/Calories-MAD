@@ -43,11 +43,18 @@
         app:showAsAction="never"
         />
     <item
+        android:id="@+id/more8"
+        android:title="@string/bmi_calculator"
+        android:contentDescription="@string/content_description_more"
+        app:showAsAction="never"
+        />
+    <item
         android:id="@+id/more5"
         android:title="@string/more5"
         android:contentDescription="@string/content_description_more"
         app:showAsAction="never"
         />
+
     <item
         android:id="@+id/more7"
         android:title="@string/more7"

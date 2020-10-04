@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -42,14 +43,20 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                 openUpdateProfile();
+
+        Toast.makeText(MainActivity.this,"FIREBASE CONNECTED",Toast.LENGTH_LONG).show();
+
+        Button btnUpdate = (Button)findViewById(R.id.btn_save);
+        btnUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,UpdateActivity.class));
+
             }
         });
+
     }
 
-    private void openUpdateProfile(){
-        Intent updateProfileIntent = new Intent(this, UpdateActivity.class);
-        startActivity(updateProfileIntent);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -90,4 +97,5 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
 }
