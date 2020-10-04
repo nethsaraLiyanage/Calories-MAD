@@ -94,7 +94,6 @@ public class exercise_display extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.more:
-            case R.id.more6:
                 Intent intent = new Intent(exercise_display.this,activity_home.class);
                 startActivity(intent);
                 return true;
@@ -114,6 +113,10 @@ public class exercise_display extends AppCompatActivity {
             case R.id.more4:
                 Intent intent4 = new Intent(exercise_display.this,exercise.class);
                 startActivity(intent4);
+                return true;
+            case R.id.more6:
+                Intent intent6 = new Intent(exercise_display.this,AddWater.class);
+                startActivity(intent6);
                 return true;
 
             default:
