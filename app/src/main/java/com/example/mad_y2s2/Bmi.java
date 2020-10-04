@@ -33,6 +33,7 @@ public class Bmi extends AppCompatActivity {
 
     }
     public void calculate(View view) {
+
         String S1 = weight.getText().toString();
         String S2 = height.getText().toString();
 
@@ -60,6 +61,7 @@ public class Bmi extends AppCompatActivity {
         }
 
         calculation = "Your BMI is\n\n" + bmi + "\n" + BMI_result;
+
 
         final_result.setText(calculation);
         dbref = FirebaseDatabase.getInstance().getReference().child("BMI");
