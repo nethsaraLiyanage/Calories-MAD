@@ -11,6 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class exercise extends AppCompatActivity {
 
     private CardView cardId1;
@@ -19,6 +22,9 @@ public class exercise extends AppCompatActivity {
     private CardView cardId4;
     private CardView cardId5;
     private CardView cardId6;
+
+    private BottomAppBar bottomAppBar;
+    private FloatingActionButton floatBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +75,19 @@ public class exercise extends AppCompatActivity {
             }
         });
 
+        bottomAppBar = findViewById(R.id.bottomAppBar);
+        setSupportActionBar(bottomAppBar);
+
+        floatBtn = findViewById(R.id.addMeal);
+        floatBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(exercise.this,Add_Meal_2.class);
+                startActivity(intent);
+
+            }
+        });
+
     }
 
     private void openCard(String cardId) {
@@ -77,8 +96,10 @@ public class exercise extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.bottom_app_bar, menu);
         return true;
@@ -89,17 +110,31 @@ public class exercise extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.more:
+            case R.id.more6:
                 Intent intent = new Intent(exercise.this,activity_home.class);
                 startActivity(intent);
+                return true;
+            case R.id.profile1:
+            case R.id.more5:
+                Intent intentprof = new Intent(exercise.this,MainActivity.class);
+                startActivity(intentprof);
+                return true;
+            case R.id.more2:
+                Intent intent2 = new Intent(exercise.this,activity_statistics.class);
+                startActivity(intent2);
+                return true;
+            case R.id.more3:
+                Intent intent3 = new Intent(exercise.this,Add_Meal_2.class);
+                startActivity(intent3);
+                return true;
+            case R.id.more4:
+                Intent intent4 = new Intent(exercise.this,exercise.class);
+                startActivity(intent4);
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-
-    private void openHome() {
-
     }
 
 }
