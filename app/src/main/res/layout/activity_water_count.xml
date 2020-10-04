@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaterCount">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="center">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="1027dp"
+            android:layout_height="343dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/headsm" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="600dp"
+            android:text="@string/txtWaterIntake"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="25dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="282dp"
+            android:layout_marginEnd="96dp"
+            android:text="Oz"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/waterAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginBottom="414dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Enter your water intake"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="366dp"
+            android:layout_marginEnd="326dp"
+            android:layout_marginBottom="346dp"
+            android:text="@string/txtWaterNote"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="93dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginEnd="251dp"
+            android:layout_marginBottom="239dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/water" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="107dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginBottom="205dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/water_2" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="143dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="533dp"
+            android:layout_marginEnd="220dp"
+            android:layout_marginBottom="109dp"
+            android:text="A glass of water is generally 8oz (ounces) = 236 ml"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="109dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="251dp"
+            android:layout_marginTop="540dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="105dp"
+            android:text="@string/noteWaterBottle"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="151dp"
+            android:layout_marginTop="323dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="368dp"
+            android:backgroundTint="#2196F3"
+            android:text="@string/ctnWaterCounted"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/wDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="143dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="564dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_anchorGravity="bottom|center"
+        app:menu="@menu/bottom_app_bar"
+        app:navigationIcon="@drawable/homenv" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_light_background"
+        app:layout_anchor="@id/bottomAppBar"
+        app:srcCompat="@drawable/plus" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
