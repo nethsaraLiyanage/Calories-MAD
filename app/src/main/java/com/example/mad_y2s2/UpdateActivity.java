@@ -1,5 +1,6 @@
 package com.example.mad_y2s2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,9 @@ public class UpdateActivity extends AppCompatActivity {
     DatabaseReference dbRef;
 
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,8 +45,25 @@ public class UpdateActivity extends AppCompatActivity {
         pWeight = findViewById(R.id.pWeight);
         pHeight = findViewById(R.id.pHeight);
 
+        pName.setText(""+getIntent().getStringExtra("wName"));
+        uName.setText(""+getIntent().getStringExtra("wUname"));
+        pEmail.setText(""+getIntent().getStringExtra("wEmail"));
+        pAge.setText(""+getIntent().getStringExtra("wAge"));
+        pWeight.setText(""+getIntent().getStringExtra("wWeight"));
+        pHeight.setText(""+getIntent().getStringExtra("wHeight"));
+
+        int bmiHeight = Integer.valueOf(pHeight.getText().toString());
+        int bmiWeight = Integer.valueOf(pWeight.getText().toString());
+
+        float bmiHEIGHT = bmiHeight/100;
+
+        float bmi = (float) bmiWeight / (bmiHEIGHT*bmiHEIGHT);
+        final String pBmi = String.valueOf(bmi);
+
+
         btnUpdateProfile = findViewById(R.id.updateButton);
         user = new UserProfile();
+
 
         btnUpdateProfile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +80,8 @@ public class UpdateActivity extends AppCompatActivity {
                                user.setAge(Integer.parseInt(pAge.getText().toString().trim()));
                                user.setWeight(Integer.parseInt(pWeight.getText().toString().trim()));
                                user.setHeight(Integer.parseInt(pHeight.getText().toString().trim()));
+                               //user.setBmi(Integer.parseInt(pBmi.trim()));
+
 
                                dbRef = FirebaseDatabase.getInstance().getReference().child("Users").child("-MIGqe4jxNjLJTCAFpfS");
                                dbRef.setValue(user);
@@ -71,6 +94,14 @@ public class UpdateActivity extends AppCompatActivity {
                         else {
                             Toast.makeText(getApplicationContext()," Nothing to update ",Toast.LENGTH_LONG).show();
                         }
+
+                        Button btnUpdate = (Button)findViewById(R.id.btn_save);
+                        btnUpdate.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                startActivity(new Intent(UpdateActivity.this,MainActivity.class));
+                            }
+                        });
                     }
 
 
