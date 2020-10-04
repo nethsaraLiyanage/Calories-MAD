@@ -6,11 +6,21 @@ public class Meal {
     private String meal_type;
     private String food_name;
     private int gram_;
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
     private int calories_;
     private String date;
     private Integer cabohydrate;
     private Integer protine;
     private Integer fat;
+    private String key;
 
     public Meal() {
 
