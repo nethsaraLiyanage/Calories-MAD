@@ -16,10 +16,7 @@
         <activity android:name=".activity_home"></activity>
         <activity android:name=".LoginUsers" ></activity>
         <activity android:name=".SignupActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity android:name=".activity_statistics"></activity>
         <activity android:name=".activity_total_food_calories_count"></activity>
@@ -27,6 +24,11 @@
         <activity android:name=".Update_meal"></activity>
         <activity android:name=".UpdateActivity"></activity>
         <activity android:name=".Bmi">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
 
