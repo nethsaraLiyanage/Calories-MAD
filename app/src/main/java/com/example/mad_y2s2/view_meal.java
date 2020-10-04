@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -37,6 +38,8 @@ public class view_meal extends AppCompatActivity {
             protected void populateView(View v, Object model, int position) {
                 TextView dateM,typeM, foodName, gramF, calorieF, uid, cabo_, prot_, fat_;
 
+                Button delete;
+                
                 uid=(TextView) v.findViewById(R.id.user_iD);
                 dateM=(TextView) v.findViewById(R.id.date);
                 typeM = (TextView) v.findViewById(R.id.type);
@@ -46,6 +49,7 @@ public class view_meal extends AppCompatActivity {
                 cabo_ = (TextView) v.findViewById(R.id.cabo);
                 prot_ = (TextView) v.findViewById(R.id.protine1);
                 fat_ = (TextView) v.findViewById(R.id.fat);
+
 
 
                 Meal pro = (Meal) model;
@@ -85,6 +89,18 @@ public class view_meal extends AppCompatActivity {
         };
 
         lv.setAdapter(adapter);
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent update = new Intent(view_meal.this, delete.class);
+                Meal p = (Meal) adapterView.getItemAtPosition(i);
+                update.putExtra("name",p.getFood_name());
+                update.putExtra("key", p.getKey());
+
+                startActivity(update);
+            }
+        });
 
 
 
