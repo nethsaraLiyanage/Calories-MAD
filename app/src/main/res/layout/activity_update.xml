@@ -85,6 +85,7 @@
             android:layout_width="197dp"
             android:layout_height="43dp"
             android:text="Save Updates"
+            android:textColor="#2196F3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.462"
@@ -201,7 +202,7 @@
             app:layout_constraintVertical_bias="0.68" />
 
         <EditText
-            android:id="@+id/fd4"
+            android:id="@+id/pName"
             android:layout_width="192dp"
             android:layout_height="45dp"
             android:ems="10"

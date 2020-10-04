@@ -31,7 +31,7 @@ Food food;
         food1=(EditText)findViewById(R.id.fd1);
         food2=(EditText)findViewById(R.id.fd2);
         food3=(EditText)findViewById(R.id.fd3);
-        food4=(EditText)findViewById(R.id.fd4);
+        food4=(EditText)findViewById(R.id.pName);
         food5=(EditText)findViewById(R.id.fd5);
         food6=(EditText)findViewById(R.id.fd6);
         food7=(EditText)findViewById(R.id.fd7);
