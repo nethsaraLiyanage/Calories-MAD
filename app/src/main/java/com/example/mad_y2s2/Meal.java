@@ -15,7 +15,6 @@ public class Meal {
     public Meal() {
 
     }
-
     public String getUid() {
         return uid;
     }
