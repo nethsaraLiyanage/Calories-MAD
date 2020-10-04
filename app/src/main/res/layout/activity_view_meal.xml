@@ -5,10 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view_meal"
-
-
     >
-
 
     <ListView
         android:id="@+id/listmeal"
@@ -32,7 +29,5 @@
         android:layout_marginTop="590dp"
         android:text="TOTAL CALORIES"
         />
-
-
 
 </RelativeLayout>

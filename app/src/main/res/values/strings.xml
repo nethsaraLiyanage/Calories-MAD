@@ -184,6 +184,13 @@
     <string name="__014" />
     <string name="food_count">5</string>
 
+    //exercise display
+    <string name="ex_display">Exercise Name</string>
+    <string name="exText01">Expected Time</string>
+    <string name="exText02">Expected Steps</string>
+    <string name="exText03">Burn Calorie count</string>
+    <string name="exText04">Description</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment 1</string>
