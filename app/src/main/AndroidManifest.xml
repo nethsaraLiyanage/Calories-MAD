@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+      
+      
         <activity android:name=".delete"></activity>
+        <activity android:name=".exercise_display"></a
+        <activity android:name=".AddWater"></activity>
         <activity android:name=".view_meal" />
         <activity android:name=".Add_Meal_2">
             <intent-filter>

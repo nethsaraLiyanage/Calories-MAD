@@ -2,8 +2,6 @@ package com.example.mad_y2s2;
 
 public class Meal {
 
-
-
     private String uid;
     private String meal_type;
     private String food_name;

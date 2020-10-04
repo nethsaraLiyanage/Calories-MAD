@@ -2,18 +2,32 @@ package com.example.mad_y2s2;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
+import java.util.ArrayList;
+
+import static android.content.ContentValues.TAG;
 
 public class WeeklyChart extends Fragment {
+
+    GraphView graph;
 
 
     @Override
@@ -23,6 +37,11 @@ public class WeeklyChart extends Fragment {
         View view = inflater.inflate(R.layout.fragment_monthly_chart, container, false);
         //get graph from the layout
         GraphView graph = (GraphView) view.findViewById(R.id.graph);
+
+
+
+
+
 
         //from series
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
