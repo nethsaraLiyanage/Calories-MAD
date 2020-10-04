@@ -15,6 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Bmi extends AppCompatActivity {
     EditText weight,height,name;
     TextView final_result;
+
     String calculation,BMI_result;
     DatabaseReference dbref;
 
@@ -22,6 +23,12 @@ public class Bmi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmi);
+
+
+
+
+
+
 
         weight = findViewById(R.id.weight);
         name = findViewById(R.id.uName);
