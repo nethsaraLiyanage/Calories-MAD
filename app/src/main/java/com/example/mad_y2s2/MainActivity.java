@@ -1,101 +1,72 @@
 package com.example.mad_y2s2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.bottomappbar.BottomAppBar;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView pName;
+    TextView uName;
+    TextView pEmail;
+    TextView pAge;
+    TextView pWeight;
+    TextView pHeight;
+
+    UserProfile user;
+    DatabaseReference dbRef;
     private Button update;
-    private BottomAppBar bottomAppBar;
-    private FloatingActionButton floatBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bottomAppBar = findViewById(R.id.bottomAppBar);
-        setSupportActionBar(bottomAppBar);
+        Toast.makeText(MainActivity.this,"FIREBASE CONNECTED",Toast.LENGTH_LONG).show();
 
-        floatBtn = findViewById(R.id.addMeal);
-        floatBtn.setOnClickListener(new View.OnClickListener() {
+        DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Users").child("-MIGqe4jxNjLJTCAFpfS");
+        readRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Add_Meal_2.class);
-                startActivity(intent);
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.hasChildren()){
+                    pName.setText(snapshot.child("name").getValue().toString());
+                    uName.setText(snapshot.child("username").getValue().toString());
+                    pEmail.setText(snapshot.child("email").getValue().toString());
+                    pAge.setText(snapshot.child("age").getValue().toString());
+                    pWeight.setText(snapshot.child("weight").getValue().toString());
+                    pHeight.setText(snapshot.child("height").getValue().toString());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
 
-        update = findViewById(R.id.btn_save);
-        update.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-                openUpdateProfile();
 
-        Toast.makeText(MainActivity.this,"FIREBASE CONNECTED",Toast.LENGTH_LONG).show();
 
         Button btnUpdate = (Button)findViewById(R.id.btn_save);
         btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,UpdateActivity.class));
-
             }
         });
 
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.bottom_app_bar, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
-        switch (item.getItemId()) {
-            case R.id.more:
-            case R.id.more6:
-                Intent intent = new Intent(MainActivity.this,activity_home.class);
-                startActivity(intent);
-                return true;
-            case R.id.profile1:
-            case R.id.more5:
-                Intent intentprof = new Intent(MainActivity.this,MainActivity.class);
-                startActivity(intentprof);
-                return true;
-            case R.id.more2:
-                Intent intent2 = new Intent(MainActivity.this,activity_statistics.class);
-                startActivity(intent2);
-                return true;
-            case R.id.more3:
-                Intent intent3 = new Intent(MainActivity.this,Add_Meal_2.class);
-                startActivity(intent3);
-                return true;
-            case R.id.more4:
-                Intent intent4 = new Intent(MainActivity.this,exercise.class);
-                startActivity(intent4);
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
     }
 
 }
