@@ -56,6 +56,17 @@
 
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Chart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
             android:id="@+id/textView27"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -131,10 +142,10 @@
         <Button
             android:id="@+id/fragButton3"
             style="?attr/materialButtonOutlinedStyle"
-            android:textColor="@color/material_on_background_emphasis_high_type"
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:text="Weekly"
+            android:textColor="@color/material_on_background_emphasis_high_type"
             android:textSize="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -144,6 +155,7 @@
             app:layout_constraintVertical_bias="0.251" />
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="365dp"
             android:layout_height="270dp"
             android:orientation="vertical"
@@ -155,11 +167,10 @@
 
             <fragment
                 android:id="@+id/fgmntDefault"
+                android:name="com.example.mad_y2s2.WeeklyChart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:name="com.example.mad_y2s2.MonthlyChart"
-                tools:ignore="MissingClass"
-                />
+                tools:ignore="MissingClass" />
 
         </LinearLayout>
 
@@ -175,9 +186,10 @@
         android:layout_gravity="bottom"
         app:layout_anchorGravity="bottom|center"
         app:menu="@menu/bottom_app_bar"
-        app:navigationIcon="@drawable/homenv" />
+        app:navigationIcon="@drawable/ic_baseline_home_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addMeal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/cardview_light_background"
