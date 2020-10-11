@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -18,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 public class LoginUsers extends AppCompatActivity {
 
     DatabaseReference dbRef;
-    String names;
+    String names,pas;
 
 
 
@@ -29,11 +30,14 @@ public class LoginUsers extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         Button b_signup;
+        ImageButton sign;
         final EditText userName, userPassword;
+        final String nName,nPassword;
 
         userName = findViewById(R.id.username);
         userPassword = findViewById(R.id.password);
         b_signup = findViewById(R.id.signup_button);
+        sign = findViewById(R.id.imageButton5);
 
 
         b_signup.setOnClickListener(new View.OnClickListener() {
@@ -41,8 +45,9 @@ public class LoginUsers extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                String u_pwd = userPassword.getText().toString();
-                String u_name = userName.getText().toString();
+                final String u_pwd = userPassword.getText().toString();
+                final String u_name = userName.getText().toString();
+
 
                 if (u_name.isEmpty()) {
 
@@ -64,7 +69,20 @@ public class LoginUsers extends AppCompatActivity {
                             if(dataSnapshot.getValue() != null ) {
 
                                 names = dataSnapshot.child("username").getValue().toString();
+                                pas = dataSnapshot.child("password").getValue().toString();
                                 Toast.makeText(getApplicationContext(), "this is from" + names, Toast.LENGTH_SHORT).show();
+                                if (u_name.equals(names) && u_pwd.equals(pas)) {
+
+
+                                    Intent intent = new Intent(getApplicationContext(), activity_home.class);
+                                    intent.putExtra("userName", names);
+                                    startActivity(intent);
+
+                                } else {
+
+                                    Toast.makeText(getApplicationContext(), "Login Failed", Toast.LENGTH_SHORT).show();
+
+                                }
 
                             }
                             else{
@@ -80,22 +98,21 @@ public class LoginUsers extends AppCompatActivity {
                         }
                     });
 
-                    if (u_name.equals(names)) {
 
-
-                        Intent intent = new Intent(getApplicationContext(), activity_home.class);
-                        intent.putExtra("userName", u_name);
-                        startActivity(intent);
-
-                    } else {
-
-                        Toast.makeText(getApplicationContext(), "Login Failed", Toast.LENGTH_SHORT).show();
-
-                    }
 
                 }
             }
 
+        });
+
+        sign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(),SignupActivity.class);
+                startActivity(intent);
+
+            }
         });
 
 }
