@@ -46,8 +46,8 @@ public class Bmi extends AppCompatActivity {
 
         String Uname = name.getText().toString();
 
-        float weightValue = Float.parseFloat(S1);
-        float heightValue = Float.parseFloat(S2) / 100;
+        float weightValue = Float.parseFloat(wString);
+        float heightValue = Float.parseFloat(hString) / 100;
 
 
         float bmi = weightValue / (heightValue * heightValue);

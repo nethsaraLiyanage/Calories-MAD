@@ -27,7 +27,7 @@
             android:id="@+id/textView7"
             android:layout_width="249dp"
             android:layout_height="40dp"
-            android:text="@string/stats"
+            android:text="@string/cstatus"
             android:textAlignment="textStart"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
@@ -52,10 +52,9 @@
             app:srcCompat="@drawable/chartwh" />
 
         <TextView
-            android:id="@+id/textView28"
+            android:id="@+id/newBMI"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/new_bmi"
             android:textColor="#000000"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -66,11 +65,10 @@
             app:layout_constraintVertical_bias="0.396" />
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/status01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bungee_shade"
-            android:text="@string/congratulations"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
             android:textColor="#FF0000"
             android:textSize="24sp"
@@ -81,10 +79,9 @@
             app:layout_constraintVertical_bias="0.497" />
 
         <TextView
-            android:id="@+id/textView30"
+            android:id="@+id/status02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/healthy"
             android:textColor="#000000"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -95,10 +92,9 @@
             app:layout_constraintVertical_bias="0.536" />
 
         <TextView
-            android:id="@+id/textView31"
+            android:id="@+id/newWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/new_weight"
             android:textColor="#000000"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -109,10 +105,9 @@
             app:layout_constraintVertical_bias="0.667" />
 
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/newHeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/new_height"
             android:textColor="#000000"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -122,7 +117,7 @@
             app:layout_constraintVertical_bias="0.718" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/updbtn"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -150,6 +145,7 @@
         app:navigationIcon="@drawable/homenv" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addMeal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/cardview_light_background"

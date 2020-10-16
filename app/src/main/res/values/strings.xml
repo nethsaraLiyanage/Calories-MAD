@@ -23,15 +23,16 @@
 
     //home
     <string name="calories">Calories</string>
-    <string name="xxxxxx">XXXXXX</string>
+    <string name="xxxxxx">867</string>
     <string name="gained1">You have gained</string>
     <string name="gained2">for today</string>
-    <string name="bmiHome">Your BMI : XXX</string>
-    <string name="caloriesExpect">Expecting Calories : XXX</string>
+    <string name="bmiHome">Your BMI : 24.0</string>
+    <string name="caloriesExpect">Expecting Calories : 2250</string>
 
 
     //statistic
     <string name="stats">Calorie Chart</string>
+    <string name="cstatus">Calorie Status</string>
     <string name="statBMI">Calculate your BMI now!</string>
     <string name="enter_height">Enter Height(Cm)</string>
     <string name="enter_weight">Enter Weight(Kg)</string>
