@@ -84,7 +84,7 @@
             app:layout_constraintVertical_bias="0.431" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/ProfName"
             android:layout_width="183dp"
             android:layout_height="28dp"
             android:lineSpacingExtra="16sp"
@@ -116,7 +116,7 @@
             app:layout_constraintVertical_bias="0.504" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/ProfEmail"
             android:layout_width="206dp"
             android:layout_height="46dp"
             android:text="@string/davidhussy_gmail_com"
@@ -131,7 +131,7 @@
             app:layout_constraintVertical_bias="0.618" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/ProfUname"
             android:layout_width="147dp"
             android:layout_height="30dp"
             android:text="@string/david123"
@@ -209,7 +209,7 @@
             app:layout_constraintVertical_bias="0.643" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/ProfAge"
             android:layout_width="74dp"
             android:layout_height="27dp"
             android:text="@string/_35"
@@ -224,7 +224,7 @@
             app:layout_constraintVertical_bias="0.667" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/ProfHeight"
             android:layout_width="74dp"
             android:layout_height="27dp"
             android:text="@string/_182"
@@ -239,7 +239,7 @@
             app:layout_constraintVertical_bias="0.721" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/ProfWeight"
             android:layout_width="74dp"
             android:layout_height="27dp"
             android:text="@string/_82"
@@ -254,7 +254,7 @@
             app:layout_constraintVertical_bias="0.721" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/ProfBMI"
             android:layout_width="74dp"
             android:layout_height="27dp"
             android:text="@string/_24_8"
@@ -269,7 +269,7 @@
             app:layout_constraintVertical_bias="0.784" />
 
         <TextView
-            android:id="@+id/textView26"
+            android:id="@+id/ProfStatus"
             android:layout_width="74dp"
             android:layout_height="27dp"
             android:text="@string/healthy"

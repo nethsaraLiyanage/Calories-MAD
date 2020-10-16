@@ -243,8 +243,8 @@
     <string name="fit">FAT</string>
     <string name="calories_">CALORIES</string>
 
-  
-  <!-- jini update : Add water count -->
+
+    <!-- jini update : Add water count -->
     <string name="btnAddWater">Add Water Count</string>
     <string name="txtDatewater" />
     <string name="txtWaterTot" />

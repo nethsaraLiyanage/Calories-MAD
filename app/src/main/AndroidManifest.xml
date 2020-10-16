@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".activity_history">
         <activity android:name=".WaterCount"></activity>
         <activity android:name=".AddWater" />
         <activity android:name=".MainActivity"/>
@@ -26,13 +26,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".MainActivity" />
+        <activity android:name=".delete" />
+        <activity android:name=".exercise_display" />
         <activity android:name=".Bmi"/>
         <activity android:name=".LoginUsers" ></activity>
         <activity android:name=".SignupActivity" />
         <activity android:name=".activity_statistics" />
-
- 
         <activity android:name=".activity_total_food_calories_count" />
         <activity android:name=".AddMeal" />
         <activity android:name=".Update_meal" />
