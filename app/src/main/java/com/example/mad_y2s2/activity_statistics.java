@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.text.DateFormat;
@@ -49,9 +51,11 @@ public class activity_statistics extends AppCompatActivity {
     private ArrayList<Meal> selmealList = new ArrayList<>();
     private DatabaseReference databaseRef;
     private Meal meal;
+    private Button calbutn;
     public static int[] calories = new int[7];
+    private EditText weight,height;
 
-    /*private Date yesterday() {
+    private Date yesterday() {
         final Calendar cal = Calendar.getInstance();
         cal.add(Calendar.DATE, -1);
         return cal.getTime();
@@ -60,8 +64,9 @@ public class activity_statistics extends AppCompatActivity {
     private String getYesterdayDateString() {
         DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         return dateFormat.format(yesterday());
-    }*/
+    }
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +75,22 @@ public class activity_statistics extends AppCompatActivity {
         fragButton2 = findViewById(R.id.fragButton2);
         fragButton3 = findViewById(R.id.fragButton3);
 
+        weight = findViewById(R.id.statWeight);
+        height = findViewById(R.id.statHeight);
+        calbutn = findViewById(R.id.calbutn);
+
+        ///calculateBMI
+
+
+
+        calbutn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String S1 = weight.getText().toString();
+                String S2 = height.getText().toString();
+                calculateBMI(S1,S2);
+            }
+        });
 
         bottomAppBar = findViewById(R.id.bottomAppBar);
         setSupportActionBar(bottomAppBar);
@@ -84,7 +105,8 @@ public class activity_statistics extends AppCompatActivity {
             }
         });
 
-        /*databaseRef = FirebaseDatabase.getInstance().getReference().child("meal");
+
+        databaseRef = FirebaseDatabase.getInstance().getReference().child("meal");
         databaseRef.addValueEventListener(new ValueEventListener() {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
@@ -140,7 +162,7 @@ public class activity_statistics extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
                 Toast.makeText(activity_statistics.this,error.getMessage().toString(),Toast.LENGTH_LONG).show();
             }
-        });*/
+        });
 
         fragButton2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -157,6 +179,8 @@ public class activity_statistics extends AppCompatActivity {
         });
 
     }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
@@ -167,7 +191,6 @@ public class activity_statistics extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
         switch (item.getItemId()) {
             case R.id.more:
                 Intent intent = new Intent(activity_statistics.this,activity_home.class);
@@ -194,7 +217,6 @@ public class activity_statistics extends AppCompatActivity {
                 Intent intent6 = new Intent(activity_statistics.this,AddWater.class);
                 startActivity(intent6);
                 return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -223,5 +245,26 @@ public class activity_statistics extends AppCompatActivity {
 
     }
 
+    public float calculateBMI(String S1, String S2) {
+
+
+        float weightValue = Float.parseFloat(S1);
+        float heightValue = Float.parseFloat(S2) / 100;
+
+
+        float bmi = weightValue / (heightValue * heightValue);
+        //Toast.makeText(activity_statistics.this, (int) bmi,Toast.LENGTH_LONG).show();
+
+
+        String sBMI = Float.toString(bmi);
+        Intent intent = new Intent(activity_statistics.this, activity_calorieStatus.class);
+        intent.putExtra("bmi", sBMI);
+        intent.putExtra("weight", S1);
+        intent.putExtra("height", S2);
+        startActivity(intent);
+
+        return bmi;
+
+    }
 
 }

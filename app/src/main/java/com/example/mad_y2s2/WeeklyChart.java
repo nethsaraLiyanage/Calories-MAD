@@ -11,12 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.google.firebase.FirebaseOptions;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
@@ -39,20 +33,16 @@ public class WeeklyChart extends Fragment {
         GraphView graph = (GraphView) view.findViewById(R.id.graph);
 
 
-
-
-
-
         //from series
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
-                new DataPoint(0, 0),
-                new DataPoint(1, 5),
-                new DataPoint(2, 3),
-                new DataPoint(3, 2),
-                new DataPoint(4, 5),
-                new DataPoint(5, 5),
-                new DataPoint(6, 5),
-                new DataPoint(7, 3)
+                //new DataPoint(0, 0),
+                new DataPoint(10, 5),
+                new DataPoint(11, 3),
+                new DataPoint(12, 2),
+                new DataPoint(13, 5),
+                new DataPoint(14, 5),
+                new DataPoint(15, 5),
+                new DataPoint(16, 3)
         });
         graph.addSeries(series);
         return view;

@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 
-
 public class GetDate {
 
     public static ArrayList<String> dates = new ArrayList<>();

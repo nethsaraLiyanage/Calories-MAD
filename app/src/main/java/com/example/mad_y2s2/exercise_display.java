@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -57,22 +58,27 @@ public class exercise_display extends AppCompatActivity {
         bCal = (TextView)findViewById(R.id.burncal);
         desc = (TextView)findViewById(R.id.description);
 
-        dref = FirebaseDatabase.getInstance().getReference().child("Exercise").child(String.valueOf(exID));
+        dref = FirebaseDatabase.getInstance().getReference().child("Exercise").child("ex001");
         dref.addValueEventListener(new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String name = snapshot.child("eName").getValue().toString();
-                String time = snapshot.child("eTime").getValue().toString();
-                String step = snapshot.child("eSteps").getValue().toString();
-                String cal = snapshot.child("bCal").getValue().toString();
-                String des = snapshot.child("description").getValue().toString();
+                try {
+                    String name = snapshot.child("eName").getValue().toString();
+                    String time = snapshot.child("eTime").getValue().toString();
+                    String step = snapshot.child("eSteps").getValue().toString();
+                    String cal = snapshot.child("bCal").getValue().toString();
+                    String des = snapshot.child("description").getValue().toString();
 
-                eName.setText(name);
-                eTime.setText(time);
-                eStep.setText(step);
-                bCal.setText(cal);
-                desc.setText(des);
+                    eName.setText(name);
+                    eTime.setText(time);
+                    eStep.setText(step);
+                    bCal.setText(cal);
+                    desc.setText(des);
+                }
+                catch (NumberFormatException e){
+                    Toast.makeText(getApplicationContext(),"Invalid Amount",Toast.LENGTH_LONG).show();
+                }
             }
 
             @Override

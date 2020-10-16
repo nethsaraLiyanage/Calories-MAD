@@ -58,7 +58,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Weekly Chart"
+            android:text="Monthly Chart"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.457"
@@ -67,7 +67,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/textView27"
+            android:id="@+id/statBMI"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/statBMI"
@@ -81,13 +81,13 @@
             app:layout_constraintVertical_bias="0.691" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName8"
+            android:id="@+id/statHeight"
             android:layout_width="177dp"
             android:layout_height="60dp"
             android:background="@drawable/bmical"
             android:ems="10"
+            android:inputType="number"
             android:hint="@string/enter_height"
-            android:inputType="textPersonName"
             android:paddingLeft="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -97,13 +97,13 @@
             app:layout_constraintVertical_bias="0.764" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName9"
+            android:id="@+id/statWeight"
             android:layout_width="190dp"
             android:layout_height="62dp"
             android:background="@drawable/bmical"
             android:ems="10"
+            android:inputType="number"
             android:hint="@string/enter_weight"
-            android:inputType="textPersonName"
             android:paddingLeft="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -113,7 +113,7 @@
             app:layout_constraintVertical_bias="0.763" />
 
         <Button
-            android:id="@+id/outlinedButton1"
+            android:id="@+id/calbutn"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,7 +167,7 @@
 
             <fragment
                 android:id="@+id/fgmntDefault"
-                android:name="com.example.mad_y2s2.WeeklyChart"
+                android:name="com.example.mad_y2s2.MonthlyChart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:ignore="MissingClass" />

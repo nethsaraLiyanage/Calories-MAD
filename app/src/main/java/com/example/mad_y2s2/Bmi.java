@@ -25,12 +25,12 @@ public class Bmi extends AppCompatActivity {
 
     }
     public void calculate(View view) {
-        String S1 = weight.getText().toString();
-        String S2 = height.getText().toString();
+        String wString = weight.getText().toString();
+        String hString = height.getText().toString();
 
 
-        float weightValue = Float.parseFloat(S1);
-        float heightValue = Float.parseFloat(S2) / 100;
+        float weightValue = Float.parseFloat(wString);
+        float heightValue = Float.parseFloat(hString) / 100;
 
 
         float bmi = weightValue / (heightValue * heightValue);
